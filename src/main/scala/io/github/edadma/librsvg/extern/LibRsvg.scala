@@ -6,9 +6,11 @@ import io.github.edadma.libcairo.extern.LibCairo.cairo_tp
 
 // Raw librsvg C entry points. librsvg's internals were rewritten in Rust, but it still ships a
 // stable C ABI (`librsvg-2`), so it binds like any other C library. An `RsvgHandle` is a GObject,
-// hence the `gobject-2.0` link for `g_object_unref` (the documented way to release a handle).
+// hence the `gobject-2.0` link for `g_object_unref` (the documented way to release a handle); the
+// `glib-2.0` link supplies `g_error_free` for releasing a load error.
 @link("rsvg-2")
 @link("gobject-2.0")
+@link("glib-2.0")
 @extern
 object LibRsvg:
   type RsvgHandle  = CStruct0

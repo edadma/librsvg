@@ -60,6 +60,9 @@ Example
 
 Load an SVG from a string, render it into a Cairo image surface, and write a PNG:
 
+![rsvg-demo](https://raw.githubusercontent.com/edadma/librsvg/main/rsvg-demo.png)
+
+
 ```scala
 import io.github.edadma.librsvg._
 import io.github.edadma.libcairo._
