@@ -7,7 +7,7 @@ ThisBuild / scalaVersion           := "3.8.4"
 ThisBuild / organization           := "io.github.edadma"
 ThisBuild / organizationName       := "edadma"
 ThisBuild / organizationHomepage   := Some(url("https://github.com/edadma"))
-ThisBuild / version                := "0.0.1"
+ThisBuild / version                := "0.0.2"
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 
 ThisBuild / publishConfiguration := publishConfiguration.value.withOverwrite(true).withChecksums(Vector.empty)
@@ -50,7 +50,7 @@ scalacOptions ++= Seq(
   "-language:existentials",
 )
 
-libraryDependencies += "io.github.edadma" %%% "libcairo" % "0.0.4"
+libraryDependencies += "io.github.edadma" %%% "libcairo" % "0.0.5"
 
 publishMavenStyle      := true
 Test / publishArtifact := false

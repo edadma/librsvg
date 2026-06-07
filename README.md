@@ -45,7 +45,7 @@ addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.12")
 Add the dependency in `build.sbt` (it brings `libcairo` transitively):
 
 ```sbt
-libraryDependencies += "io.github.edadma" %%% "librsvg" % "0.0.1"
+libraryDependencies += "io.github.edadma" %%% "librsvg" % "0.0.2"
 ```
 
 Then import the facade:
